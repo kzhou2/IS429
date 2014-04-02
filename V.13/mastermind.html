@@ -1,0 +1,59 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+  <head>
+    <title>Mastermind</title>
+    <script language='JavaScript' src='mastermind.js'></script>
+    <!-- version 1.1; see mastermind.js for comments  -->
+  </head>
+
+  <body bgcolor="white" onload="init()">
+
+    <table width=520 border=0>
+	<tr><td rowspan=3 valign='top'>
+	<input type="submit" value="Reset Game" onclick="newGame()">
+	<input type="submit" value="Bot 1 Play" onclick="showHelp(1)">
+	<input type="submit" value="Bot 2 Play" onclick="showHelp(2)">
+	<input type="submit" value="Bot 1 vs Bot 2" onclick="beat()">
+	<input type="submit" value="Show Answer" onclick="showAnswer()">
+	<input type="submit" value="Game Result" onclick="showRes()">
+	<table>
+  <tr>
+    <td>
+      Bot 1      
+    </td>
+	    <td>
+      Bot 2     
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <textarea id = 'myTextarea1' name="myTextarea1" rows="8" cols="40"></textarea>
+    </td> 
+	    <td>
+      <textarea id = 'myTextarea2' name="myTextarea2" rows="8" cols="40"></textarea>
+    </td> 
+  </tr>
+</table>
+
+	    <table border=1 cellspacing=0 cellpadding=4 margin=0>
+		<tr><td id='messageTd'>&nbsp;</td></tr><tr><td>
+		    <table id='boardTable' border=0 >
+		        <!-- tr with "Guess" button will be added here. -->
+			<tr id='blackLineTr'>
+			  <td colspan=8 align="center">
+			    <img src="blackpixel.gif" id="blackHorizontalTd"
+				 width = "100%" height=3 border=0>
+			  </td>
+			</tr><tr>
+			  <script Language=JavaScript>
+			    document.write( getButtonArrayHTML() );
+			  </script>
+			</tr>  
+		    </table>
+		  </td></tr>
+	    </table>
+		
+
+    </table>
+  </body>
+</html>
