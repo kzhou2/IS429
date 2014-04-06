@@ -17,7 +17,7 @@ colorImages  = ['redball.gif',    'blueball.gif',    'brownball.gif',
                 'greenball.gif',  'yellowball.gif',  'pinkball.gif' ];
 
 // --------------------------------------------------------
-// called when user clicks "New Game" - git 192234.
+// called when user clicks "New Game" - git kk192234.
 function newGame(){
     resetGame();
     gameNumber++;
